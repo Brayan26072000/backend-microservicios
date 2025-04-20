@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  productos-service:
+    build: ./productos-service
+    ports:
+      - "8081:8081"
+
+  inventario-service:
+    build: ./inventario-service
+    ports:
+      - "8082:8082"
+
+  gateway-service:
+    build: ./gateway-service
+    ports:
+      - "8085:8085"
