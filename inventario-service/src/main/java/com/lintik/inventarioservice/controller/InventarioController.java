@@ -96,7 +96,7 @@ public class InventarioController {
 
     @GetMapping
     public ResponseEntity<Map<String, Object>> listarInventario() {
-        List<Inventario> lista = inventarioService.listarTodo(); // Asegúrate de tener este método
+        List<Inventario> lista = inventarioService.listarTodo(); 
         return ResponseEntity.ok(Map.of("data", lista));
     }
 }
