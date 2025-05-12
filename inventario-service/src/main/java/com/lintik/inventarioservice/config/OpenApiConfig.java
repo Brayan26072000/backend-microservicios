@@ -10,8 +10,8 @@ public class OpenApiConfig {
     @Bean
     public GroupedOpenApi api() {
         return GroupedOpenApi.builder()
-                .group("productos-api")  // Puedes cambiar el nombre del grupo según tu preferencia
-                .packagesToScan("com.lintik.inventarioservice")  // Asegúrate de que sea el paquete correcto
+                .group("productos-api")  
+                .packagesToScan("com.lintik.inventarioservice")  
                 .build();
     }
 }
